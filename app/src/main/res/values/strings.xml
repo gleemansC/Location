@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">定位系统</string>
+    <string name="title_activity_account_log_">Account_log_Activity</string>
+    <string name="title_activity_log">LogActivity</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="log_label">登录</string>
+    <string name="sign_label">注册</string>
+</resources>

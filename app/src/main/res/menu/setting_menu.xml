@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/map_type_normal"
+        android:title="平面地图"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/map_type_satellite"
+        android:title="卫星地图"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_night"
+        android:title="夜景地图"
+        app:showAsAction="never" />
+</menu>

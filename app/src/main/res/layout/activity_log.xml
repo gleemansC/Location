@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8F8"
+    tools:context="com.giraffe.Users.LogActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/logo"
+        app:layout_constraintBottom_toTopOf="@+id/acnt_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/acnt_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:background="#EFEFEF"
+        android:hint="请输入账号"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/pwd_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/pwd_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:background="#EFEFEF"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acnt_id" />
+
+    <Button
+        android:id="@+id/log_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="133dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="17dp"
+        android:text="记住密码"
+        app:layout_constraintBottom_toTopOf="@+id/log_id"
+        app:layout_constraintEnd_toEndOf="@+id/log_id"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_id" />
+
+</android.support.constraint.ConstraintLayout>
